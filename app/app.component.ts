@@ -7,6 +7,10 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
+    onMediItemDelete(mediaItem){
+        
+    }
+
     firstMediaItem = {
         id:1,
         name:"That 70's Show",
