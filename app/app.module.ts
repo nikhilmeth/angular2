@@ -1,28 +1,17 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { AppComponent } from './app.component';
 
 @NgModule({
   imports: [
-    BrowserModule,
-    ReactiveFormsModule,
-    HttpClientModule,
-    routing
+    BrowserModule
   ],
   declarations: [
-    AppComponent,
-    MediaItemComponent,
-    MediaItemListComponent,
-    FavoriteDirective,
-    CategoryListPipe,
-    MediaItemFormComponent
-  ],
-  providers: [
-    MediaItemService,
-    { provide: lookupListToken, useValue: lookupLists },
-    { provide: HttpXhrBackend, useClass: MockXHRBackend }
+    AppComponent
   ],
   bootstrap: [
     AppComponent
   ]
 })
+
 export class AppModule {}
