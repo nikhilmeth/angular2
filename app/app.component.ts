@@ -13,11 +13,11 @@ export class AppComponent {
 
     firstMediaItem = {
         id:1,
-        name:"That 70's Show",
+        name:"That 70s Show",
         medium: "Series",
         category: "Comedy",
         year: 1997,
-        watchedOn: 1294166565384,
+        watchedOn: true,
         isFavorite: true
     }
 }
