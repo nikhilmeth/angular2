@@ -30,7 +30,7 @@ import { MockXHRBackend } from './mock-xhr-backend';
   providers:[
     MediaItemService,
     { provide: lookupListToken, useValue: lookupLists },
-    { provide: HttpClientModule, useClass: MockXHRBackend }
+    { provide: HttpXhrBackend, useClass: MockXHRBackend }
   ],
   bootstrap: [
     AppComponent
